@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHECK PC</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>CHECK PC</h1>
+
+        <p class="subtitle">
+            Descubra se aquele computador vale a compra.
+        </p>
+
+        <div class="card">
+
+            <label>Processador</label>
+            <input id="cpu" type="text" placeholder="Ex: Ryzen 5 5600">
+
+            <label>Placa de vídeo</label>
+            <input id="gpu" type="text" placeholder="Ex: GTX 1650">
+
+            <label>Memória RAM</label>
+            <input id="ram" type="number" placeholder="Ex: 16">
+
+            <label>Armazenamento</label>
+            <input id="storage" type="text" placeholder="Ex: SSD 480 GB">
+
+            <label>Fonte</label>
+            <input id="fonte" type="text" placeholder="Ex: Corsair CV550">
+
+            <label>Preço</label>
+            <input id="preco" type="number" placeholder="Ex: 1800">
+
+            <button onclick="analisarPC()">
+                ANALISAR PC
+            </button>
+
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
