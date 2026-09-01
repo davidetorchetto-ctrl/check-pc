@@ -3,11 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CHECK PC</title>
 
@@ -24,62 +20,72 @@
             Descubra se aquele computador vale a compra.
         </p>
 
-
         <div class="card">
 
             <label>Processador</label>
-
             <input
                 id="cpu"
                 type="text"
                 placeholder="Ex: Ryzen 5 5600"
             >
 
-
             <label>Placa de vídeo</label>
-
             <input
                 id="gpu"
                 type="text"
                 placeholder="Ex: GTX 1650"
             >
 
+            <label>Placa-mãe</label>
+            <input
+                id="placamae"
+                type="text"
+                placeholder="Ex: B450M"
+            >
 
             <label>Memória RAM</label>
-
             <input
                 id="ram"
                 type="number"
                 placeholder="Ex: 16"
             >
 
-
             <label>Armazenamento</label>
-
             <input
                 id="storage"
                 type="text"
                 placeholder="Ex: SSD 480 GB"
             >
 
-
             <label>Fonte</label>
-
             <input
                 id="fonte"
                 type="text"
                 placeholder="Ex: Corsair CV550"
             >
 
-
             <label>Preço</label>
-
             <input
                 id="preco"
                 type="number"
                 placeholder="Ex: 1800"
             >
 
+            <label>Para que você pretende usar o PC?</label>
+
+            <select id="uso">
+                <option value="jogos">Jogos</option>
+                <option value="trabalho">Trabalho</option>
+                <option value="edicao">Edição de foto e vídeo</option>
+                <option value="basico">Uso básico</option>
+            </select>
+
+            <label>O computador é:</label>
+
+            <select id="condicao">
+                <option value="usado">Usado</option>
+                <option value="novo">Novo</option>
+            </select>
 
             <button onclick="analisarPC()">
                 ANALISAR PC
@@ -87,19 +93,12 @@
 
         </div>
 
-
         <div
             id="resultado"
             class="resultado">
         </div>
 
     </main>
-
-
-    <!--
-        Primeiro carregamos nossa base de hardware.
-        Depois carregamos o cérebro do CHECK PC.
-    -->
 
     <script src="hardware.js"></script>
     <script src="script.js"></script>
