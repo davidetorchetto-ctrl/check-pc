@@ -40,13 +40,28 @@ label {
     font-weight: bold;
 }
 
-input {
+/* Campos de texto + menus */
+
+input,
+select {
     width: 100%;
     padding: 14px;
     border: 1px solid #ddd;
     border-radius: 10px;
     font-size: 16px;
+    background: white;
+    color: #191919;
 }
+
+/* Quando a pessoa clica em um campo */
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #777;
+}
+
+/* Botão principal */
 
 button {
     width: 100%;
@@ -64,6 +79,8 @@ button {
 button:hover {
     opacity: 0.85;
 }
+
+/* Área onde aparece a análise */
 
 .resultado {
     margin-top: 25px;
